@@ -1,5 +1,5 @@
 ## Those two functions conbines creating a new matrix and return its inversion either through real calculating or retrieving
- if it already exists in the cache data.
+## if it already exists in the cache data.
 
 ## This function is a list containing a function to set/get a new matrix and set/get its inverse. 
 
@@ -17,8 +17,8 @@ list(set=set,get=get,setmean=setmean,getmean=getmean)
 }
 
 
-## This function first calculates the mean of the new matrix. But it first checks if it has been calculated before.
-If it was the case, then the cache data will be return. Otherwise, inverse will be calculated and returned.
+## This function first calculates the inverse of the new matrix. But it first checks if it has been calculated before.
+## If it was the case, then the cache data will be return. Otherwise, inverse will be calculated and returned.
 
 cacheSolve <- function(x, ...) {
 m<-x$getinverse()
